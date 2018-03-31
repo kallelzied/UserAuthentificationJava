@@ -15,7 +15,7 @@ public class PasswordChecker {
 
     private static final Pattern pattern = compile(CREDENTIAL_PATTERN);
 
-    public static boolean isValid(String password){
+    public static boolean isValid(String password) {
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }

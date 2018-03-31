@@ -18,6 +18,8 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Documented
 public @interface ValidPassword {
     String message() default "Password requires min 8 characters with at least one special symbol @^#$,;:_%";
+
     Class<?>[] groups() default {};
+
     Class<? extends Payload>[] payload() default {};
 }
