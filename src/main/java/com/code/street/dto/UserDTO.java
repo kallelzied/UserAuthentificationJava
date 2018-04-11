@@ -8,6 +8,9 @@ import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+/**
+ * @author Zied Kallel
+ */
 @PasswordMatches
 public class UserDTO {
     @NotNull
